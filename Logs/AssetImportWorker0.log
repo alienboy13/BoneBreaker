@@ -216,3 +216,106 @@ Received Import Request.
 Start importing Assets/Sprites/GameObjects/Blocks/Tibia_2_Fibula_1Sheet.png using Guid(063e1916e6a06f747ae9c6836c8d742e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec567f4f41ead3549793abaf1afe9fb4') in 0.022854 seconds 
   Import took 0.031565 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 35671.583951 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdddd331c3f1b7826858a8d92db67e39') in 0.196479 seconds 
+  Import took 0.203670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005004 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdddd331c3f1b7826858a8d92db67e39') in 0.017987 seconds 
+  Import took 0.023282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.207002 seconds.
+  path: Assets/Fonts
+  artifactKey: Guid(9a390a479ac51c2459e2034a27c12ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts using Guid(9a390a479ac51c2459e2034a27c12ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1288076abebb7f0e7ebcec77da2de25') in 0.012961 seconds 
+  Import took 0.018258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.081398 seconds.
+  path: Assets/Fonts/Symtext.ttf
+  artifactKey: Guid(6a7dcd1c645f6144ab1d92c66deb1195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Symtext.ttf using Guid(6a7dcd1c645f6144ab1d92c66deb1195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb4eb64b9ccf1dcbe20299c46364473') in 0.034909 seconds 
+  Import took 0.046600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.315975 seconds.
+  path: Assets/Fonts/Symtext SDF.asset
+  artifactKey: Guid(c33f9d4508c548c44bf557e737a4dd3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Symtext SDF.asset using Guid(c33f9d4508c548c44bf557e737a4dd3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: '13c50d87596cddf2e204034b5e010419') in 0.130208 seconds 
+  Import took 0.135582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.974077 seconds.
+  path: Assets/Fonts/Symtext SDF.asset
+  artifactKey: Guid(c33f9d4508c548c44bf557e737a4dd3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Symtext SDF.asset using Guid(c33f9d4508c548c44bf557e737a4dd3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: '405475279c670971e26fbca3eda5da38') in 0.024443 seconds 
+  Import took 0.030031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 188.018274 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95df672b4aaba54310d34c83eef51bb8') in 0.009577 seconds 
+  Import took 0.015505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95df672b4aaba54310d34c83eef51bb8') in 0.003510 seconds 
+  Import took 0.012480 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003218 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.218 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1219ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (89ms)
+		EndReloadAssembly (967ms)
+			LoadAssemblies (99ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (361ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (329ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
