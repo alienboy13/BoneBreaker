@@ -26,7 +26,7 @@ public class Ball : MonoBehaviour
     {
         if(gameStarted)
         {
-            
+            JohnsFailsafe();
         }
         else
         {
@@ -80,11 +80,44 @@ public class Ball : MonoBehaviour
                     yspeed = -Random.Range(maxSpeed-randomTolerance, maxSpeed);
                 }
             }
+            else
+            {
+                yspeed = -ballVelocity.y;
+                xspeed = -ballVelocity.x;
+            }
            
             ballVelocity = new Vector2(xspeed, yspeed);
             rb.velocity = ballVelocity;
         }
 
+    public void JohnsFailsafe()
+    {
+        float yspeed;
+        float xspeed;
+        if(rb.velocity.x == 0f || rb.velocity.y == 0f)
+        {
+            int directionFactor = Random.Range(1,10);
+            if(directionFactor > 5)
+                {
+                    yspeed = -Random.Range(maxSpeed-randomTolerance, maxSpeed);
+                }
+            else
+                {
+                    yspeed = Random.Range(maxSpeed-randomTolerance, maxSpeed);
+                }
+            directionFactor = Random.Range(1,10);
+            if(directionFactor > 5)
+                {
+                    xspeed = -Random.Range(maxSpeed-randomTolerance, maxSpeed);
+                }
+            else
+                {
+                    xspeed = Random.Range(maxSpeed-randomTolerance, maxSpeed);
+                }
+            
+            rb.velocity = new Vector3(xspeed, yspeed);
+        }
+    }
     public void StartGame()
     {
         rb.velocity = ballVelocity;

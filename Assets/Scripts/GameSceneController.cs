@@ -1,13 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameSceneController : MonoBehaviour
 {
     [SerializeField] bool isPaused;
     [SerializeField] bool gameStarted;
+    
+    [SerializeField] TextMeshProUGUI timeLabel;
+    
     [SerializeField] GameObject PauseCanvas;
     [SerializeField] GameObject StartCanvas;
+    [SerializeField] SceneManager sceneManager;
+    
+    
     [SerializeField] Paddle paddle;
     [SerializeField] Ball ball;
     [SerializeField] int layersBroken;
@@ -18,7 +25,7 @@ public class GameSceneController : MonoBehaviour
         layersBroken = 0;
         Cursor.visible = false;
         gameStarted = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     // Update is called once per frame
@@ -26,10 +33,13 @@ public class GameSceneController : MonoBehaviour
     {
         CheckForPause();
         CheckForStart();
+        CheckForLevelWin();
+        UpdateTime();
     }
 
    void FindComponents()
    {
+       sceneManager = FindObjectOfType<SceneManager>();
        paddle = FindObjectOfType<Paddle>();
        ball = FindObjectOfType<Ball>();
    }
@@ -74,5 +84,27 @@ public class GameSceneController : MonoBehaviour
     public void IncrementLayersBroken()
     {
         layersBroken += 1;
+    }
+
+    public void CheckForLevelWin()
+    {
+        if(FindObjectOfType<Block>() == null)
+        {
+            sceneManager.SwitchToWinStateScreen();
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+    }
+
+    public void FailLevel()
+    {
+        sceneManager.SwitchToGameOverScreen();
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void UpdateTime()
+    {
+        timeLabel.text = "Time: " + Mathf.Round(Time.time);
     }
 }

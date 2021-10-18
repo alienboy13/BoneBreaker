@@ -34,10 +34,17 @@ public class Block : MonoBehaviour
             }
             else
             {
-                Destroy(this.gameObject);
+                StartCoroutine("DelayedDestroy");
             }
             
         }
+    }
+
+    IEnumerator DelayedDestroy()
+    {
+        blockSprite.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        Destroy(this.gameObject);
     }
 
     void FindComponents()
